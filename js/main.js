@@ -11,15 +11,15 @@ $( document ).ready(function() {
 
   $('video').addClass('fadeIn animated');
 
-  $('.revelio-home').on('click', function(){
-    $('.projects-container').hide();
-    $('.home-container').show();
-  })
-
-  $('.revelio-projects').on('click', function(){
-    // $('.sidenav').fadeOut();
-    $('.home-container').hide();
-    $('.projects-container').show();
-  })
+  // $('.revelio-home').on('click', function(){
+  //   $('.projects-container').hide();
+  //   $('.home-container').show();
+  // })
+  //
+  // $('.revelio-projects').on('click', function(){
+  //   // $('.sidenav').fadeOut();
+  //   $('.home-container').hide();
+  //   $('.projects-container').show();
+  // })
 
 });
