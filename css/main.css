@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  font-family: 'Gugi', serif;
+}
+
+h1, h2, p {
+  text-shadow: 2px 2px #383838;
+}
+
+/********************************
+  PRELOADER
+*********************************/
+.preloader {
+  display: none;
+  vertical-align: middle;
+}
+
+/********************************
+  NAVBAR
+*********************************/
+#slide-out {
+  width: 90px;
+  background: #778899;
+  opacity: 0.7;
+}
+
+.sidenav-trigger {
+  padding: 20px;
+}
+
+.material-icons {
+  margin-top: 20px;
+  text-shadow: 2px 2px #383838;
+}
+
+.sidenav li>a>i.material-icons {
+  /*padding-top: 20px;*/
+  color: #42a5f5;
+}
+
+.nav-icons-box {
+  margin-top: 150px;
+}
+
+.sidenav li>a {
+  margin: 20px 0 20px 0;
+}
+
+/********************************
+  VIDEO
+*********************************/
+.background-img {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+}
+
+.video-overlay {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #778899;
+  z-index: 1;
+  opacity: 0.6;
+}
+
+/********************************
+  HEADER
+*********************************/
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header-content {
+  margin-top: 50px;
+  z-index: 0;
+  text-align: center;
+  color: #2196f3;
+}
+
+/********************************
+  Projects
+*********************************/
+.projects-container {
+  /*display: none;*/
+  text-align: center;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.carousel-test {
+  overflow: hidden;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  transition: all .3s ease-in-out;
+}
+
+.image-wrapper img {
+  align-self: center;
+  height: 250px;
+  width: 250px;
+}
