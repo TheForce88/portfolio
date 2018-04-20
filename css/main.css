@@ -1,10 +1,29 @@
 * {
   box-sizing: border-box;
   font-family: 'Gugi', serif;
+  color: white;
 }
 
-h1, h2, p {
+body {
+  background-color: #f8f9fa;
+}
+
+h1, h2 {
   text-shadow: 2px 2px #383838;
+}
+
+p {
+  font-family: 'Open Sans', serif;
+  color: black;
+}
+
+button {
+  font-family: 'Gugi', serif;
+}
+
+.doc-scroller {
+  scroll-snap-points-y: repeat(100%);
+  scroll-snap-type: mandatory;
 }
 
 /********************************
@@ -18,10 +37,14 @@ h1, h2, p {
 /********************************
   NAVBAR
 *********************************/
+.sidenav-button {
+  position: fixed;
+}
+
 #slide-out {
   width: 90px;
-  background: #778899;
-  opacity: 0.7;
+  /*height: 100vh;*/
+  /*position: absolute;*/
 }
 
 .sidenav-trigger {
@@ -30,43 +53,20 @@ h1, h2, p {
 
 .material-icons {
   margin-top: 20px;
+  color: #bbdefb;
   text-shadow: 2px 2px #383838;
 }
 
 .sidenav li>a>i.material-icons {
-  /*padding-top: 20px;*/
-  color: #42a5f5;
+  color: #bbdefb;
 }
 
 .nav-icons-box {
-  margin-top: 150px;
+  margin-top: 200px;
 }
 
 .sidenav li>a {
   margin: 20px 0 20px 0;
-}
-
-/********************************
-  VIDEO
-*********************************/
-.background-img {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
-}
-
-.video-overlay {
-  height: 100vh;
-  width: 100vw;
-  position: absolute;
-  top: 0;
-  left: 0;
-  background: #778899;
-  z-index: 1;
-  opacity: 0.6;
 }
 
 /********************************
@@ -75,43 +75,149 @@ h1, h2, p {
 
 .header-container {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 100vh;
+  margin-left: 100px;
 }
 
 .header-content {
-  margin-top: 50px;
+  margin-top: 125px;
   z-index: 0;
-  text-align: center;
   color: #2196f3;
 }
 
+.welcome-text {
+  margin-bottom: 50px;
+}
+
 /********************************
-  Projects
+  HOME
 *********************************/
-.projects-container {
-  display: none;
+
+.home-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+
+/********************************
+  BUTTONS
+*********************************/
+
+.button-box {
+  margin: 10px;
+}
+
+/********************************
+  RIGHT-SIDE-CONTENT
+*********************************/
+
+.right-side-content {
+  margin: 0 100px 0 50px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  margin-top: 100px;
+}
+
+.sneak-peak {
+  width: 300px;
+  height: 300px;
+  background: url('../img/light-the-way.jpg') center no-repeat;
+  background-size: cover;
+  clip-path: polygon(0% 20%, 60% 20%, 60% 0%, 100% 50%, 60% 100%, 60% 80%, 0% 80%);
+  /*clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);*/
+  animation: clips 5s ease infinite;
+}
+
+.right-side-content p {
+  margin-top: 100px;
   text-align: center;
 }
 
-.content-wrapper {
+
+@keyframes clips {
+  50% {
+  clip-path: polygon(40% 0%, 40% 20%, 100% 20%, 100% 80%, 40% 80%, 40% 100%, 0% 50%)
+  /*clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);*/
+  }
+}
+
+img {
+  max-width: 40%;
+  max-height: 100%;
+}
+
+
+/********************************
+  PROJECTS
+*********************************/
+
+.projects-container {
+  text-align: center;
+  background-color: #22283f;
+  height: 100vh;
+}
+
+.projects-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.projects-container h2 {
+  margin-left: 80px;
+}
+
+.card {
+  background-color: #22283f;
+  height: 500px;
+  margin-left: 80px;
+}
+
+.card-content {
+  height: 400px;
+}
+
+.card-container  {
+  position: absolute;
+  left: 0;
+  display: none;
+}
+
+.card-container p {
+  color: #ffffff;
+}
+
+.card-action a {
+  color: blue;
+}
+
+.card-container .row {
+  margin: 0 auto;
+}
+
+.projects-left {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
-.carousel-test {
-  overflow: hidden;
-}
-
-.image-wrapper {
-  display: flex;
-  justify-content: center;
-  transition: all .3s ease-in-out;
 }
 
 .image-wrapper img {
   align-self: center;
   height: 250px;
   width: 250px;
+}
+
+/********************************
+  CONTACT FORM
+*********************************/
+.contact-container {
+  text-align: center;
+  background-color: #e3f2fd;
+  height: 100vh;
+  color: black;
 }

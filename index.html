@@ -6,6 +6,7 @@
   <!--Import Google Icon Font-->
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link href='https://fonts.googleapis.com/css?family=Gugi' rel='stylesheet'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet'>
 
   <!--css links-->
   <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
@@ -30,10 +31,10 @@
 
     <ul id="slide-out" class="navstyle sidenav">
       <div class="nav-icons-box">
-        <li><a class="revelio-home waves-effect" href="#!"><i class="material-icons icon-blue">public</i></a></li>
-        <li><a class="waves-effect" href="#!"><i class="material-icons icon-blue">account_box</i></a></li>
-        <li><a class="revelio-projects waves-effect" href="#!"><i class="material-icons icon-blue">art_track</i></a></li>
-        <li><a class="waves-effect" href="#!"><i class="material-icons icon-blue">mail</i></a></li>
+        <li><a class="revelio-home waves-effect" href="#home"><i class="material-icons icon-blue">public</i></a></li>
+        <li><a class="waves-effect" href="#about"><i class="material-icons icon-blue">account_box</i></a></li>
+        <li><a class="revelio-projects waves-effect" href="#projects"><i class="material-icons icon-blue">art_track</i></a></li>
+        <li><a class="waves-effect" href="#contact"><i class="material-icons icon-blue">mail</i></a></li>
       </div>
     </ul>
     <a href="#" data-target="slide-out" class="sidenav-trigger"><i class="medium material-icons">unfold_more</i></a>
@@ -47,49 +48,143 @@
     </div>
   </div>
 
-  <div class="home-container">
-    <header class="header-container">
-      <div class="background-img">
-        <div class="video-overlay"></div>
-        <video autoplay loop class="video">
-          <source src="./img/Perfect_Hour.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
-        </video>
+  <div class="doc-scroller">
+
+    <div id="home" class="home-container section scrollspy">
+
+      <div class="left-side-content">
+        <header class="header-container">
+          <div class="header-content bring-to-front">
+            <img src="./img/name.jpg" alt="name in wakandan alphabet">
+            <div class="welcome-text">
+              <h1>Welcome...</h1>
+              <h2>I'm Elaine Chesoni,</h2>
+              <h2>Web Developer</h2>
+              <!-- <p>Have a look around...</p> -->
+            </div>
+            <img src="./img/wakanda-forever.jpg" alt="wakanda forever">
+            <div class="button-box">
+              <a class="revelio-projects waves-effect waves-light btn" href="#projects">Projects</a>
+              <a class="waves-effect waves-light btn" href="#contact">Contact</a>
+            </div>
+          </div>
+        </header>
       </div>
-      <div class="header-content bring-to-front">
-        <h1>Welcome...</h1>
-        <h2>I'm Elaine Chesoni,</h2>
-        <h2>Web Developer</h2>
+
+      <div class="right-side-content">
+        <!-- <p>Find out more about me...</p> -->
         <p>Have a look around...</p>
-        <a class="revelio-projects waves-effect waves-light btn">Projects</a>
-        <a class="waves-effect waves-light btn">Contact</a>
+        <div class="sneak-peak"></div>
       </div>
-    </header>
-  </div>
 
-  <div class="projects-container">
-    <h1>Check out my projects...</h1>
+    </div>
 
-      <div class="content-wrapper">
-        <div class="carousel-test">
-          <div class="image-wrapper">
-            <a class="carousel-item" href="https://github.com/Dereje24/Can-you-get-out"><img src="./img/get_out.jpg"></a>
-            <a class="carousel-item" href="https://github.com/TheForce88/monument"><img src="./img/monument.jpg"></a>
-            <a class="carousel-item" href="https://protected-hollows-53369.herokuapp.com/"><img src="./img/stringz.jpg"></a>
+    <div id="projects" class="projects-container section scrollspy">
+
+      <div class="projects-left">
+        <h2 class="projects-header">Check out my projects...</h2>
+
+        <div class="revelio-project-one card-container">
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-content white-text">
+                  <span class="card-title">Can You Get Out</span>
+                  <p>Can You Get Out is a computer science quiz app. The app has two different themes based on our groups two favorite movies; Get Out and Black Panther.
+                 Users start the quiz in "Get Out", and (if they're successfull) end up in Wakanda!</p>
+                </div>
+                <div class="card-action">
+                  <a class="blue-text" href="#">Node, Express, MongoDB</a>
+                  <a class="blue-text" href="#">MapBox</a>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-        <div>
-          <ul class="carousel-indicators">
-            <li data-slide-number="0" class="active"></li>
-            <li data-slide-number="1"></li>
-            <li data-slide-number="2"></li>
-            <li data-slide-number="3"></li>
-            <li data-slide-number="4"></li>
-          </ul>
+
+        <div class="revelio-project-two card-container">
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-content white-text">
+                  <span class="card-title">Monument</span>
+                  <p>Monument is a blog page created from a set of wireframes. The site was created using basic HTML, CSS, and Javascript.
+                 The goal was to create a website the closely resembled the given schematics.</p>
+                </div>
+                <div class="card-action">
+                  <a class="blue-text" href="#">HTML, CSS, Javascript</a>
+                  <a class="blue-text" href="#">That's it!</a>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+
+        <div class="revelio-project-three card-container">
+          <div class="row">
+            <div class="col s12 m6">
+              <div class="card">
+                <div class="card-content white-text">
+                  <span class="card-title">Stringz</span>
+                  <p>Stringz inventory and scheduling management app for a racquet stringing team.
+                  Users can view inventory and "racquets" as well as add racquets to the stringing queue</p>
+                </div>
+                <div class="card-action">
+                  <a class="blue-text" href="#">Node, Express, MongoDB</a>
+                  <a class="blue-text" href="#">EJS Layouts</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
 
-  </div>
 
+          <div class="projects-right">
+              <div class="image-wrapper">
+                <a class="project-one" href="https://github.com/Dereje24/Can-you-get-out"><img src="./img/get_out.jpg"></a>
+                <a class="project-two" href="https://github.com/TheForce88/monument"><img src="./img/monument.jpg"></a>
+                <a class="project-three" href="https://protected-hollows-53369.herokuapp.com/"><img src="./img/stringz.jpg"></a>
+              </div>
+          </div>
+
+    </div>
+
+    <div id="contact" class="contact-container section scrollspy">
+      <div class="form-box">
+        <div class="row">
+          <div class="col m10 offset-m1 s12">
+            <h2 class="center-align contact-form-header">Get in touch...</h2>
+            <div class="row">
+              <form class="col m8 offset-m2 s12">
+                <div class="row">
+                  <div class="input-field col s12">
+                    <input id="name" type="text">
+                    <label for="name">Name</label>
+                  </div>
+                  <div class="input-field col s12">
+                    <input id="email" type="email" class="form-input">
+                    <label for="email">Email</label>
+                  </div>
+                  <div class="input-field col s12">
+                    <textarea id="message" class="materialize-textarea"></textarea>
+                    <label for="message">Message</label>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col m12">
+                    <p class="right-align"><button class="btn btn-large waves-effect waves-light" type="button" name="action">Send Message</button></p>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
 </body>
 
 </html>
