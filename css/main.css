@@ -1,3 +1,7 @@
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   box-sizing: border-box;
   font-family: 'Gugi', serif;
@@ -196,14 +200,16 @@ img {
   color: blue;
 }
 
+.fa-github:before, .fa-paper-plane:before {
+  font-size: 20px;
+}
+
 .card-container .row {
   margin: 0 auto;
 }
 
-.projects-left {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+.image-wrapper {
+  z-index: 2;
 }
 
 .image-wrapper img {
